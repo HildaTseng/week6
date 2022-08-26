@@ -15548,13 +15548,13 @@ header {
 header .logo {
   width: 175px;
   height: 42px;
-  background-image: url(../../images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-size: cover;
 }
 
 @media (max-width: 767.98px) {
   header .logo {
-    background-image: url(../../images/logo2.svg);
+    background-image: url(../images/logo2.svg);
     width: 24px;
     height: 24px;
   }
@@ -15683,7 +15683,7 @@ footer p {
 }
 
 .banner-backimg {
-  background-image: url(../../../assets/images/bg_home_mobile.jpg);
+  background-image: url(../images/bg_home_mobile.jpg);
   height: 336px;
   width: 100%;
   background-position: center;
@@ -15701,7 +15701,7 @@ footer p {
 
 @media (min-width: 992px) {
   .banner-backimg {
-    background-image: url(../../../assets/images/bg_home.jpg);
+    background-image: url(../images/bg_home.jpg);
   }
 }
 
@@ -15977,25 +15977,25 @@ footer p {
 }
 
 .advantage .advantage-backimg1 {
-  background-image: url(../../images/info01.jpg);
+  background-image: url(../images/info01.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .advantage .advantage-backimg2 {
-  background-image: url(../../images/info02.jpg);
+  background-image: url(../images/info02.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .advantage .advantage-backimg3 {
-  background-image: url(../../images/info03.jpg);
+  background-image: url(../images/info03.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .advantage .advantage-backimg4 {
-  background-image: url(../../images/info04.jpg);
+  background-image: url(../images/info04.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -16140,7 +16140,7 @@ footer p {
 }
 
 .share .share-backimg {
-  background-image: url(../../../assets/images/bg_share.jpg);
+  background-image: url(../images/bg_share.jpg);
   height: 733px;
   background-position: center;
   background-size: contain;
