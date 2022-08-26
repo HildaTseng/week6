@@ -1,0 +1,63 @@
+---
+title: 信用卡付款
+layout: ./app/layout.ejs
+engine: ejs
+---
+<main>
+    <section class="progress-nav ">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-lg-7 m-auto mt-6 ">
+                    <div class="position-relative border-top progress-item border-2">
+                        <div class="position-absolute top-0 start-0 translate-middle "><span class="material-symbols-outlined">check</span></div>              
+                        <div class="position-absolute top-0 start-50 translate-middle"><span class="circlenumber">2</span></div>
+                        <div class="position-absolute top-0 start-100 translate-middle"><span>3</span></div>                         
+                    </div>           
+                    <div class="position-relative">
+                        <div class="position-absolute top-0 start-0 translate-middle text-agree-g">課程報名</div>
+                        <div class="position-absolute top-0 start-50 translate-middle text-agree-g">信用卡付款</div>
+                        <div class="position-absolute top-0 start-100 translate-middle card-width">付款成功</div>                
+                        
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="creditcard-pay bg-black vh-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="bg-grey-9 p-4 mt-4 mt-lg-5 mb-9 py-lg-5 px-lg-6">
+                        <h2>信用卡付款</h2>
+                        <h3>請輸入信用卡資訊進行付款</h3>
+                        <form action="#" method="post" >
+                            <div class="d-flex flex-column ">
+                                <label for="card-number" class="mb-2 text-grey-5">信用卡帳號</label>
+                                <input class="mb-3 mb-lg-4 py-2 px-3 bg-grey-9 border border-white text-white" required type="text" name="card-number" id="card-number" placeholder="xxxx-xxxx-xxxx-xxxx" minlength="16" maxlength="16">
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <label for="security-code" class="mb-2 text-grey-5" >安全碼</label>
+                                <input class="mb-3 mb-lg-4 py-2 px-3 bg-grey-9 border border-white text-white" required type="password" name="security-code" id="security-code" placeholder="***"  minlength="3" maxlength="3">
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <label for="email" class="mb-2 text-grey-5">有效日期</label>
+                                <input class="mb-3 mb-lg-4 py-2 px-3 bg-grey-9 border border-white text-white" required type="text" name="email" id="email" placeholder="(MM-YY)">  
+                            </div>
+
+                            <div class="d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-center">
+                                <h4 class="mb-4 mb-lg-0">NT$1600</h4>    
+                                <a href="./order.html" type="submit" class="btn btn-primary button-linear d-md-grid d-block">下一步</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+    </section>
+
+</main>

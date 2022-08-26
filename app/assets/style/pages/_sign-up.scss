@@ -1,0 +1,156 @@
+
+.progress-nav{
+    height: 88px;   
+    background-color: black;
+    @include media-breakpoint-up(md){
+        background-color: $grey-9;
+    }
+    .progress-item{
+        height: 32px;        
+    }
+    span{
+        background-color: $primary;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid $grey-5;
+        color: white;        
+        display:block;
+        text-align: center;
+        font-size: 8px;
+    } 
+    .circlenumber{
+        background-color: $agree-g; 
+        border-color: $agree-g;
+    }
+    .card-width{
+        width: 64px;
+    }
+    .material-symbols-outlined{
+       padding:4px 0;
+       background-color: $agree-g ;
+       border-color: $agree-g;       
+    }
+}
+.pay-class{ 
+    padding-bottom: 40px;
+    @include media-breakpoint-up(xl){
+        padding-bottom: 144px; 
+    }     
+    .card{       
+        margin-bottom: 32px;    
+        padding: 24px;
+        @include media-breakpoint-up(lg){
+            padding: 48px 32px;
+            margin-right: -48px;
+            z-index: 1;      
+        }       
+        img{
+            width: 100px;
+            height: 100px;
+            border: 3px solid $agree-g;
+            border-radius: 50%;
+        }
+        h5{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .card::after{
+        position: absolute;
+        content: '';
+        border-color: $primary  transparent transparent  transparent;
+        border-style: solid solid solid solid;
+        border-width: 12px;
+        top: 100%;
+        @include media-breakpoint-up(lg){
+            border-color: transparent transparent  transparent $primary ;
+            left: 100%;
+            top: 50%;
+        }
+    }
+}
+.pay-form{
+    padding: 24px;
+    @include media-breakpoint-up(lg){     
+        padding: 32px 48px 32px 114px;
+        margin-left: -48px; 
+    }    
+    h2{
+        font-size: 24px;
+        line-height: 35px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    h3{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        text-align: center;
+        @include media-breakpoint-up(lg){
+            text-align:start
+        }
+    }
+    .payment-method{
+        a{
+            border-radius: 8px;
+            
+            &:hover{
+                border-color: $agree-g;
+                background-color: transparent;
+                color:$agree-g;           
+            }
+        }
+    } 
+    form{
+        h4{
+            font-family: "Azeret Mono";   
+            font-size: 18px;           
+        }
+        input{
+            border-radius: 4px;
+        }
+        .button-linear{
+            background: linear-gradient(99deg,$agree-b,$agree-g);
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 18px;
+            line-height: 26px;
+            transition:all 0.5s ease;
+            &:hover{
+                color: black;
+                background: linear-gradient(200deg,$agree-b,$agree-g);
+            }
+            @include media-breakpoint-up(lg){
+                padding: 8px 48px;
+                
+            }
+        }
+        .dropdown-item:hover{
+            background-color: $grey-7;
+
+        }
+        .datepicker{
+            color:  #1C1C1C;
+        }
+        .form-control, .form-control:focus {
+            border-color: #FFFFFF;
+            background-color: transparent;
+            color: #C1C1C1;
+          }
+        .datepicker-controls .btn{
+           background: #FFFFFF;
+           color:#000;
+        }
+        .datepicker-cell:not(.disabled):hover {
+            background-color: #e8e8e8;
+          }
+          
+          .datepicker-cell.selected, .datepicker-cell.selected:hover {
+            background-color: #e8e8e8;
+            color: #000;
+          }
+    }
+}

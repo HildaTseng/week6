@@ -1,0 +1,35 @@
+
+.order-item {
+    .material-symbols-outlined {
+        font-size: 40px;
+        vertical-align: bottom;
+        color: $agree-g;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 48
+        
+      }
+}
+
+.order-item {
+    background-color:$grey-9;
+    @include media-breakpoint-up(lg){
+        background-color: $primary;
+    }
+    .button-linear{
+        background: linear-gradient(104deg,$agree-b,$agree-g);
+        border-radius: 8px;
+        transition:all 0.5s ease;
+        &:hover{
+            color: black;
+            background: linear-gradient(208deg,$agree-b,$agree-g);
+        }        
+    }
+    h2{
+        @include media-breakpoint-up(lg){
+            margin-bottom: 54px;
+        }
+    }
+}

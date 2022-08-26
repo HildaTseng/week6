@@ -1,0 +1,112 @@
+header{
+    height: 90px;   
+    @include media-breakpoint-down(md){
+        height: 72px;
+    }
+    .logo {
+        width: 175px;
+        height: 42px;
+        background-image:url(../../../assets/images/logo.svg);
+        background-size: cover;
+        @include media-breakpoint-down(md){
+            background-image: url(../../../assets/images/logo2.svg);
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .navbar{
+        display: block;
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+        a:hover{
+            color: $agree-g;
+        }
+    }
+    .nav{
+        display: none;
+        @include media-breakpoint-down(md){
+            display: block;
+        }
+    }
+    .card{
+        height: 174px;      
+        
+    } 
+    .collapse{
+        display: block;
+        @include media-breakpoint-up(md){
+            display: none;
+        }
+    } 
+}
+.modal{
+    &-item{
+        border: 1px solid white;
+        @include media-breakpoint-up(md){
+            border-color:$primary ;
+        }
+    }
+   
+    &-body{
+        a{
+            background: linear-gradient(104deg,$agree-b,$agree-g);
+            transition:all 0.5s ease;
+            border-radius: 8px;
+            &:hover{
+                color: black;
+                background: linear-gradient(208deg,$agree-b,$agree-g);
+            }
+        }
+        input{
+            border-radius: 8px;
+        }
+    }
+    &-footer{
+        position: relative;
+        img{
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 32px;
+        }
+        p{
+            position: relative;
+            text-align: center;
+        }
+        p::before{
+            position: absolute;
+            content: '';
+            width: 30%;
+            height: 1px;            
+            background-color: $grey-5;
+            left: 0;
+            top:50%;
+        }
+        p::after{
+            position: absolute;
+            content: '';
+            width: 30%;
+            height: 1px;            
+            background-color: $grey-5;
+            right: 0;
+            top:50%;
+        }
+    }
+   .btn-position{
+    position: absolute;
+    top: 30px;
+    right: 24px;
+   }
+}
+footer{
+    p{
+        font-size: 12px;
+        line-height: 14px;
+        font-family: "Azeret Mono";   
+        @include media-breakpoint-up(md){
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+---
+title: 課程報名
+layout: ./app/layout.ejs
+engine: ejs
+---
+<main>
+    <section class="progress-nav ">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-lg-7 m-auto mt-6 ">
+                    <div class="position-relative border-top progress-item">
+                        <div class="position-absolute top-0 start-0 translate-middle "><span class="circlenumber">1</span></div>              
+                        <div class="position-absolute top-0 start-50 translate-middle"><span>2</span></div>
+                        <div class="position-absolute top-0 start-100 translate-middle"><span>3</span></div>                         
+                    </div>           
+                    <div class="position-relative">
+                        <div class="position-absolute top-0 start-0 translate-middle text-agree-g">課程報名</div>
+                        <div class="position-absolute top-0 start-50 translate-middle">信用卡付款</div>
+                        <div class="position-absolute top-0 start-100 translate-middle card-width">付款成功</div>                
+                        
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    <section class="bg-black ">
+        <div class="pay-class  pt-md-4 pt-lg-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                   <div class="col-lg-4">
+                        <div class="card bg-primary d-flex align-items-center">
+                            <img src="./assets/images/teacher01.jpg" class="mb-3 " alt="Belinda">                      
+                            <div class="card-body p-0  ">
+                                <h5 class="fw-bold mb-2 text-center">基礎前端 - HTML</h5>
+                                <p class="mb-2 text-agree-g text-center">前端語言</p>
+                                <p class="m-0">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+                            </div>                
+                        </div> 
+                   </div>
+                    
+                   <div class="col-lg-8">
+                        <div class="pay-form  bg-grey-9">
+                            <h2>課程報名</h2>
+                            <h3>選擇付款方式</h3>
+                            <div class="row g-2 g-md-3 payment-method justify-content-evenly mb-6 justify-content-lg-start align-items-lg-center ps-lg-3">
+                                <a href="#" type="button" class="btn btn-outline-white col-5 col-lg-3 col-xxl-2 py-3 px-2 me-lg-4">信用卡付款</a>
+                                <a href="#" type="button" class="btn btn-outline-white col-5 col-lg-2 py-3 px-2 me-lg-4">超商繳款</a>
+                                <a href="#" type="button" class="btn btn-outline-white col-5 col-lg-2 py-3 px-2 me-lg-4">ATM轉帳</a>
+                                <a href="#" type="button" class="btn btn-outline-white col-5 col-lg-3 col-xxl-2 py-3 px-2 ">12期分期付款</a>
+                            </div>
+            
+                            <h3 class="mb-lg-4">訂單資訊</h3>
+                            <form action="#" method="post" class="row g-lg-3">
+                                <div class="d-flex flex-column col-lg-6">
+                                    <label for="name" class="mb-2 text-grey-5">姓名</label>
+                                    <input class="mb-3 py-2 px-3 bg-grey-9 border border-white text-white" type="text" name="name" id="name" placeholder="請輸入姓名" required>
+                                </div>
+                                <div class="d-flex flex-column col-lg-6">
+                                    <label for="phone" class="mb-2 text-grey-5" >電話</label>
+                                    <input class="mb-3 py-2 px-3 bg-grey-9 border border-white text-white" type="text" name="phone" id="phone" placeholder="請輸入電話號碼" required>
+                                </div>
+                                <div class="d-flex flex-column col-lg-12">
+                                    <label for="email" class="mb-2 text-grey-5">Email</label>
+                                    <input class="mb-3 py-2 px-3 bg-grey-9 border border-white text-white" type="text" name="email" id="email" placeholder="請輸入Email" required>  
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="class" class="mb-2 text-grey-5" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">課程</label>            
+                                    <div class="dropdown mb-3">
+                                        <button class="btn btn-secondary dropdown-toggle w-100 bg-grey-9 text-grey-5 py-2 px-3 rounded-3 border-1 border-white d-flex flex-row justify-content-between align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" required>1堂50分鐘</button>
+                                        <ul class="dropdown-menu bg-grey-9 " aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item text-grey-5" href="#">1堂50分鐘</a></li>
+                                        <li><a class="dropdown-item text-grey-5" href="#">3堂50分鐘</a></li>
+                                        <li><a class="dropdown-item text-grey-5" href="#">10堂50分鐘</a></li>                          
+                                        <li><a class="dropdown-item text-grey-5" href="#">20堂50分鐘</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column col-lg-6">
+                                    <label for="inputdate" class="mb-2 text-grey-5">想預約的日期</label>
+                                    <input class="mb-3 py-2 px-3 bg-grey-9 border border-white text-grey-5" type="text" name="inputdate" id="inputdate" placeholder="請選擇日期" required>
+                                </div>
+                                <div>
+                                    <label for="location" class="mb-2 text-grey-5" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">上課地點</label>
+                                    <div class="dropdown mb-4">
+                                        <button class="btn btn-secondary dropdown-toggle w-100 bg-grey-9 text-grey-5 py-2 px-3 rounded-3 border-1 border-white d-flex flex-row justify-content-between align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" required>請選擇地點</button>
+                                        <ul class="dropdown-menu bg-grey-9 " aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item text-grey-5" href="#">台北</a></li>
+                                        <li><a class="dropdown-item text-grey-5" href="#">桃園</a></li>
+                                        <li><a class="dropdown-item text-grey-5" href="#">台中</a></li>                          
+                                        <li><a class="dropdown-item text-grey-5" href="#">高雄</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+            
+                                <div class="d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-center">
+                                    <h4 class="mb-4 mb-lg-0">NT$1600</h4>    
+                                    <a href="./creditcard-pay.html" type="submit" class="btn btn-primary button-linear d-md-grid d-block">前往結賬</a>
+                                </div>
+                            </form>
+            
+                        </div>    
+                   </div>
+
+                </div>    
+    
+                
+            </div>
+        </div>
+    </section>
+</main>
